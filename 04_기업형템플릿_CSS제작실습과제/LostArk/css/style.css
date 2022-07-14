@@ -1,0 +1,311 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: 0;
+  color: #ccc;
+}
+/* clear */
+.clear::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.inner {
+  width: 1500px;
+  /* height: 800px; */
+  margin: 0 auto;
+}
+
+html {
+  font-family:Arial, Helvetica, sans-serif, 'Noto Sans KR';
+  font-size: 16px;
+}
+/* ******************************** */
+/* 헤더 */
+/* ********************************* */
+
+header {
+  left: 50%;
+  margin-left: -750px;
+  position: absolute;
+  width: 1500px;
+  height: 80px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+#logo {
+  position: absolute;
+  background-image: url('/images/Logo2.png');
+  top: 10px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+#gnb {
+  position: absolute;
+  top: 20px;
+  left: 10%;
+  color: #fff;
+}
+
+#gnb li {
+  float: left;
+}
+
+#gnb li a {
+  font-weight: bold;
+  padding: 10px 30px;
+  line-height: 40px;
+  color: #fff;
+  transition: all 0.2s;
+  /* border-bottom: 4px solid pink; */
+}
+
+#gnb li:hover a {
+  border-bottom: 4px solid palevioletred;
+}
+
+header em {
+  display: block;
+  position: absolute;
+  color: #EEE;
+  right: 15%;
+  top: 30px;
+  font-size: 16px;
+  font-style: italic;
+}
+
+header em:hover {
+  color: violet;
+}
+
+header img {
+  position: absolute;
+  width: 150px;
+  height: 80px;
+  right: 0%;
+  top: 0%;
+  width: 150px;
+  height: 80px;
+}
+
+/* 배경이미지 */
+main {
+  top: 0%;
+  position: relative;
+  background-image: url('/images/bg_index_issue_v16.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1000;
+  height: 500px;
+  width: 100vw;
+}
+
+/*  */
+  .section2-inner {
+    /* background-color: #ccc; */
+    width: 1500px;
+    height: 500px;
+    margin: 0 auto;
+    /* padding: 100px 50px; */
+    /* height: 400px; */
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+  }
+
+  .box {
+    /* position: absolute; */
+    display: inline-block;
+    width: 450px;
+    height: 400px;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+
+  .box img {
+    position: absolute;
+    width: 450px;
+    margin-top: -80px;
+    opacity: 0.8;
+    transition: all 0.6s;
+  }
+
+  .box:hover img {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .section2 .box3 img {
+    width: 400px;
+    height: 500px;
+  }
+
+  .box p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Noto sans KR';
+  }
+
+  /* 3 */
+  .section3 {
+    position: relative;
+    width: 1500px;
+    height: 350px;
+    margin: 0 auto;
+    /* background-color: #EEE; */
+    margin-bottom: 20px;
+  }
+
+  .picture {
+    position: absolute;
+    display: inline-block;
+    margin-left: 100px;
+    /* background-color: black; */
+    width: 700px;
+    height: 500px;
+    top: -30%;
+    left: -70px;
+    background-image: url(/images/Aeromancer.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -10;
+  }
+
+  .picture a {
+    display: block;
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 9%;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+
+  .picture a:hover {
+    background-color: #EEE;
+    color: black;
+    border: 1px solid transparent;
+  }
+
+  .picture:hover {
+    box-shadow: 10px 10px 10px #222;
+    cursor: pointer;
+  }
+
+  iframe {
+    position: absolute;
+    width: 730px;
+    height: 300px;
+    top: 20px;
+    left: 50%;
+    background-color: #ccc;
+    margin-bottom: 0px;
+  }
+
+
+/* 푸터 */
+footer {
+  padding-top: 40px;
+  position: relative;
+  width: 1500px;
+  height: 150px;
+  bottom: 0%;
+  margin-bottom: 0px;
+  /* border: 1px solid red; */
+  background-color: #222;
+  left: 50%;
+  margin-left: -750px;
+}
+
+.footer-wrap {
+  width: 100vw;
+  height: 150px;
+  background-color: #222;
+}
+
+footer .inner {
+  float: left;
+  height: 0px;
+}
+
+footer .footer-left {
+  float: left;
+  border-right: 1px solid #fff;
+  width: 40%;
+}
+
+.sgr {
+  background-image: url('/images/SmilegateRPG.png');
+}
+
+.stove {
+  background-image: url('/images/SmilegateStove.png');
+}
+
+.sg {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 50px;
+  width: 164px;
+  height: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-right {
+  text-align: center;
+}
+
+.footer_menu {
+  position: absolute;
+  left: 50%;
+}
+
+.footer-right li {
+  float: left;
+}
+
+.footer-right li a {
+  z-index: 10;
+  padding: 20px 40px;
+  font-size: 12px;
+  transition: all 0.6s;
+}
+
+.footer-right li:hover a {
+  color: red;
+}
+
+.footer-right p {
+  display: inline-block;
+  color: white;
+  padding: 20px 40px;
+}

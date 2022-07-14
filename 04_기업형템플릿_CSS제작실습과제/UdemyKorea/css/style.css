@@ -1,0 +1,307 @@
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Noto Sans KR';
+  overflow-x: hidden;
+}
+
+/* 헤더 */
+ header {
+  position: relative;
+  height: 80px;
+ }
+
+ #logo {
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  width: 200px;
+  height: 100px;
+ }
+
+ #logo a {
+  display: block;
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+ }
+
+ header .category {
+  position: absolute;
+  font-size: 16px;
+  left: 20%;
+  top: 25px;
+ }
+
+ header .category:hover {
+  color : darkorchid;
+ }
+
+ header .search {
+  position: absolute;
+  left: 25%;
+  top: 20px;
+ }
+
+ header .search input {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+ }
+
+ header #gnb {
+  position: absolute;
+  right: 25%;
+  top: 5px;
+ }
+
+ #gnb li {
+  float: left;
+ }
+
+ #gnb li a {
+  display: block;
+  font-size: 16px;
+  padding: 20px 40px;
+  transition: all 0.6s;
+}
+
+#gnb li:hover a {
+  color: blueviolet;
+}
+
+header .nav {
+  position: absolute;
+  right: 15%;
+  top: 25px;
+}
+
+/* *******************************************************************컨테이너************************************************ */
+.container {
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.box {
+  display: inline-block;
+  color: #111;
+  width: 400px;
+  height: 200px;
+}
+
+.box span {
+  font-size: 25px;
+}
+
+/* section2 */
+.section2 {
+  position: relative;
+}
+
+.section2 img {
+  width: 500px;
+  display: inline-block;
+}
+
+.section2 .box1 {
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+
+.box a {
+  display: block;
+  width: 270px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 30px;
+  color: white;
+  background-color: #111;
+  border-radius: 10px;
+  transition: all 0.6s;
+}
+
+.box a:hover {
+  background-color: #555;
+}
+
+
+/*  */
+
+.section3-wrap {
+  width: 100vw;
+  background-color: #ddd;
+}
+
+.section3 {
+  background-color: #ddd;
+  color: #222;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.section3 .box {
+  width: 280px;
+}
+
+.section3 .txt {
+  text-align: center;
+  /* line-height: 80px; */
+}
+
+.section3 .txt span {
+  font-size: 3rem;
+  line-height: 150px;
+  font-weight: bolder;
+}
+
+.section3 .txt p {
+  font-size: 1.125rem;
+}
+/*  */
+.section4 {
+  position: relative;
+  height: 500px;
+}
+
+.section4 img {
+  position: absolute;
+  width: 500px;
+  right: 0%;
+}
+
+.section4 .box2 {
+  position: absolute;
+  /* text-align: center; */
+  top: 30%;
+  left: 15%;
+}
+
+.section4 .txt span {
+  font-size: 3rem;
+  line-height: 150px;
+  font-weight: bolder;
+}
+
+/*  */
+.section5{
+  position: relative;
+  height: 500px;
+}
+.section5 img {
+  width: 500px;
+}
+
+.section5 .box3 {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+
+/* ************************푸터 ***********************/
+.footer-wrap {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  /* border-top: 2px solid red; */
+  background-color: #111;
+}
+
+footer {
+  /* border: 1px solid red; */
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  height: 300px;
+}
+
+.footer-menu {
+  position: absolute;
+  top: 10%;
+  width: 400px;
+  height: 300px;
+}
+
+.footer-menu li {
+  float: left;
+}
+
+.footer-menu li a {
+  display: block;
+  padding: 10px 40px;
+  color: #eee;
+}
+
+.footer-menu li:hover a {
+  color: blueviolet;
+}
+
+.footer-logo {
+  position: absolute;
+  bottom: 10%;
+  left: 40px;
+  color: #eee;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+
+.footer-sns {
+  position: absolute;
+  width: 300px;
+  top: 15%;
+  right: 5px;
+}
+
+.footer-sns li{
+  float: left;
+}
+
+.footer-sns li a {
+  display: block;
+  color: #eee;
+  padding: 0px 20px;
+  transition: all 0.6s;
+}
+
+.footer-sns li:hover a {
+  color: blueviolet;
+}
+
+.footer-inf {
+  position: absolute;
+  width: 250px;
+  color: white;
+  bottom: 20px;
+  right: 40px;
+  border-top: 2px solid white;
+  padding-top: 30px;
+}
+
+.footer-inf span {
+  font-weight: bold;
+}
+
+.footer-inf address {
+  color: #777;
+}
